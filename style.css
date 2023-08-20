@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 50px;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+input{
+    border: 2px solid white;
+    padding: 10px;
+    width: 250px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+}
+
+#submit-button{
+    background-color: black;
+    border: 2px solid white;
+    padding: 10px;
+    width: 200px;
+    color: white;
+}
+
+#search-input{
+    width: 100%;
+}
+
+table{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-collapse:collapse ;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+th{
+    border: 2px solid white;
+    padding: 10px;
+}
+
+td{
+    border-right: 2px solid white;
+    padding: 10px;
+}

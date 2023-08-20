@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+        CRUD APPLICATION:
+        create
+        read 
+        update
+        delete
+        Search functionality
+     -->
+     <h1>Student Management CRUD</h1>
+     <form id="student-form" onsubmit="return handleSubmit()">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="grade" placeholder="GPA" required>
+        <input type="number" id="age" placeholder="Age" required>
+        <input type="text" id="degree" placeholder="Degree" required>
+        <!-- input type hidden and it would be our student id -->
+        <input type="hidden" id="student-id">
+        <button type="submit" id="submit-button">Add Student</button>
+     </form>
+     <hr>
+     <div id="search-box">
+        <input type="text" id="search-input" placeholder="Search By Name, email or degree" onkeyup="searchStudents()">
+     </div>
+     <hr>
+     <table id="student-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Student Name</th>
+                <th>Age</th>
+                <th>GPA</th>
+                <th>Degree</th>
+                <th colspan="2">Email</th>
+            </tr>
+        </thead>
+        <tbody id="student-body">
+
+        </tbody>
+     </table>
+    <script src="./script.js"></script>
+</body>
+</html>
